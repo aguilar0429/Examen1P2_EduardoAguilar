@@ -12,7 +12,7 @@ public class Users {
     private int telefono;
     private String plan;
     private ArrayList<Servicios> Servicios;
-
+    
     public Users() {
     }
 

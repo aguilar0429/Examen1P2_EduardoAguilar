@@ -9,6 +9,8 @@ public class Examen1P2_EduardoAguilar {
         Login lg = new Login();
         lg.setVisible(true);
         lg.setLocationRelativeTo(null);
+        
+        
     }
     
 }

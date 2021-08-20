@@ -9,6 +9,9 @@ public class Peliculas {
     private int streaming;
     private String plot;
 
+    public Peliculas() {
+    }
+
     public Peliculas(String nombre, int duracion, int cine, int streaming, String plot) {
         this.nombre = nombre;
         this.duracion = duracion;

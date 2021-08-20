@@ -15,6 +15,9 @@ import javax.swing.JOptionPane;
 public class CRUD extends javax.swing.JFrame {
 
     private ArrayList<Servicios> services = new ArrayList();
+    private ArrayList<Peliculas> peliculas = new ArrayList();
+    private ArrayList<Series> series = new ArrayList();
+    private ArrayList<Miniseries> mseries = new ArrayList();
     public CRUD() {
         initComponents();
     }
@@ -669,7 +672,8 @@ public class CRUD extends javax.swing.JFrame {
         int actors = Integer.parseInt(actores);
         Series ser = new Series(name,tempos,clasificacion,year,actors);
         Servicios s = new Servicios();
-        s.getSeries().add(ser);
+        series.add(ser);
+        s.setSeries(series);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
@@ -696,7 +700,8 @@ public class CRUD extends javax.swing.JFrame {
         String plot = jTextField15.getText();
         Miniseries ms = new Miniseries(name,genero, seasons, duracion, plot);
         Servicios s = new Servicios();
-        s.getMini().add(ms);
+        mseries.add(ms);
+        s.setMini(mseries);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
@@ -725,7 +730,8 @@ public class CRUD extends javax.swing.JFrame {
         
         Peliculas p = new Peliculas(name,length,fecha1,fecha2,plot);
         Servicios s = new Servicios();
-        s.getPelis().add(p);
+        peliculas.add(p);
+        s.setPelis(peliculas);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
