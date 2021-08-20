@@ -10,9 +10,9 @@ public class Servicios {
     private String calificacion;
     private String lanzamiento;
     private String empresa;
-    private ArrayList<Series> series;
-    private ArrayList<Miniseries> mini;
-    private ArrayList<Peliculas> pelis;
+    private ArrayList<Series> series = new ArrayList();
+    private ArrayList<Miniseries> mini= new ArrayList();
+    private ArrayList<Peliculas> pelis= new ArrayList();
     
     public Servicios() {
     }
